@@ -1,0 +1,16 @@
+
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>...</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <span><a href="/Etudiants">Liste des etudiants</a></span>
+    </button>
+    <button mat-menu-item>
+      <span><a href="/Profil">Mon profil</a></span>
+    </button>
+    <button mat-menu-item>
+      <span><a href="/Quitter">Quitter</a></span>
+    </button>
+  </mat-menu>
+
