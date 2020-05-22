@@ -13,7 +13,7 @@ import { ProfilComponent } from './profil/profil.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AjouterparticipantComponent } from './ajouterparticipant/ajouterparticipant.component';
+//import { AjouterparticipantComponent } from './ajouterparticipant/ajouterparticipant.component';
 
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,6 +28,9 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule} from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
+import { EditComponent } from './profil/edit/edit.component';
+
 
 
 
@@ -38,7 +41,9 @@ import { MatSortModule } from '@angular/material/sort';
     HorizontaleComponent,
     VerticalComponent,
     ProfilComponent,
-    AjouterparticipantComponent,
+    ListEtudiantComponent,
+    EditComponent,
+    //AjouterparticipantComponent,
   
     
   ],
@@ -53,9 +58,6 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    
-
-   
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
