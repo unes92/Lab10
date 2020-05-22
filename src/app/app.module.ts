@@ -13,13 +13,33 @@ import { ProfilComponent } from './profil/profil.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AjouterparticipantComponent } from './ajouterparticipant/ajouterparticipant.component';
+
+
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+import {MatListModule} from '@angular/material/list';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule} from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HorizontaleComponent,
     VerticalComponent,
-    ProfilComponent
+    ProfilComponent,
+    AjouterparticipantComponent,
+  
     
   ],
   imports: [
@@ -32,7 +52,26 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+
+   
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    NoopAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   
   providers: [],
