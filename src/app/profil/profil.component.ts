@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-import { PictureServiceService } from '../picture-service.service';
-import {Employe } from '../models/employe';
+import { ServiceEtudiantService } from '../service-etudiant.service';
+import {Etudiant } from '../models/etudiant';
 
-
+/**
+ * @author : younes
+ * classe  ProfilComponent : qui affiche ajout les etudiants
+ */
 
 
 
@@ -13,46 +16,74 @@ import {Employe } from '../models/employe';
   styleUrls: ['./profil.component.css']
 })
 export class ProfilComponent implements OnInit {
- // profilForm: FormGroup;
+ 
 
-  
-  myEmployee: Employe = {
+  /**
+   *
+   *definition du modele myEtudiant qu'on va utliser pour relier le TS avec DOM
+   * @type {Etudiant}
+   * @memberof ProfilComponent
+   */
+  myEtudiant: Etudiant = {
     nom:'',
     prenom:'',
     email:'',
     telephone:''
   }
-  emp:Employe;
-  Employes: Employe[];
 
+  emp:Etudiant;
   
+ Etudiants: Etudiant[];
+
   ngOnInit(): void {
   }
  
-  constructor(private addService: PictureServiceService) { 
+
+  /**
+   *Creates an instance of ProfilComponent.  : injection du service + initialisation du la liste etudiants
+   * @param {ServiceEtudiantService} addService
+   * @memberof ProfilComponent
+   */
+  constructor(private addService: ServiceEtudiantService) { 
   
-this.Employes=[];
+//this.Etudiants=[];
    
   }
 
-
-  emailFormControl = new FormControl('', [
+/**
+ *definiton validator email
+ *
+ * @memberof ProfilComponent
+ */
+emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
   ]);
 
 
-  ajoutEmployee(){
-    this.addService.addEmployee(this.myEmployee).subscribe((employe) => {
-      this.Employes = [employe, ...this.Employes];
-    });
 
-
-    console.log("nom employe"+this.myEmployee.nom);
+  /**
+   *
+   *ajoutetudiant : methode qui fait l'ajout d'un etudiant vers le fihier json
+   * @memberof ProfilComponent
+   */
+  ajoutetudiant(){
+    this.addService.addobject<Etudiant>(this.myEtudiant).subscribe(
+      etudiant => this.Etudiants = [etudiant,...this.Etudiants]);
+    
+    console.log(" etudiant 1"+this.Etudiants[0].nom);
+    console.log(" etudiant 2"+this.Etudiants[2].nom);
+    console.log("nom etudiant"+this.myEtudiant.nom);
   };
 
+
+  /**
+   *vider les champs
+   *
+   * @memberof ProfilComponent
+   */
   reset() {
-    this.myEmployee = {
+    this.myEtudiant = {
       nom:'',
       prenom:'',
       email:'',
@@ -102,10 +133,19 @@ this.Employes=[];
       register(data){
         this.emp=data;
       console.log("data"+data);
-      console.log("nom employe"+this.myEmployee.nom);
+      console.log("nom employe"+this.myEtudiant.nom);
     //  this.services.createEmployee(this.emp);
     this.addService.msg(data);
         }
 
-  
+  /*
+    afficher_etudiant()
+    {
+      this.data.getArticles().subscribe(
+        articles => this.articles = articles
+      );
+    }*/
+
+
+
 }

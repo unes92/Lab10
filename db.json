@@ -1,9 +1,9 @@
 {
-  "Employes": [
+  "Etudiants": [
     {
       "id": 1,
       "nom": "Raj",
-      "prenom": "Varma",
+      "prenom": "Varmas",
       "telephone": "9845781256",
       "email": "emp@g.ff"
     },
@@ -22,16 +22,9 @@
       "email": "Gopal@g.ff"
     },
     {
-      "nom": "dd",
-      "prenom": "dd",
-      "email": "dasda@dd.dd",
-      "telephone": "32141234324",
-      "id": 4
-    },
-    {
-      "nom": "",
-      "prenom": "",
-      "email": "",
+      "nom": "hmouti",
+      "prenom": "aziz",
+      "email": "hmouti@gmail.com",
       "telephone": "11223344",
       "id": 5
     },
@@ -43,11 +36,11 @@
       "id": 6
     },
     {
-      "nom": "sssssss",
-      "prenom": "wwwww",
-      "email": "ffffff",
-      "telephone": "11223344",
-      "id": 7
+      "nom": "mohcini",
+      "prenom": "said",
+      "email": "mohcini@gmail,com",
+      "telephone": "21232323",
+      "id": 8
     }
   ]
 }
