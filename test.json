@@ -1,0 +1,134 @@
+{
+  "contacts" : {
+    "-M6yk9IOvSmhqrbQf6pP" : {
+      "email" : "dd@gg.com",
+      "location" : {
+        "city" : "agadir",
+        "state" : "dasdasd",
+        "zip" : "2112"
+      },
+      "name" : "younes"
+    },
+    "-M6zEQ6sWs9p5INGh5oF" : {
+      "email" : "necotis542@clsn.top",
+      "location" : {
+        "city" : "ddasd",
+        "state" : "dasd",
+        "zip" : "asdas"
+      },
+      "name" : "sssss"
+    },
+    "-M6zEmzrYaWs2EHpbuwp" : {
+      "email" : "necotis542@clsn.top",
+      "location" : {
+        "city" : "ddasd",
+        "state" : "sad",
+        "zip" : "wqwdqw"
+      },
+      "name" : "dasd"
+    },
+    "-M6zFc0zZ4VTCOic9EYX" : {
+      "email" : "dasda@dd.dd",
+      "location" : {
+        "city" : "ddasd",
+        "state" : "sadasd",
+        "zip" : "dasdas"
+      },
+      "name" : "hh"
+    },
+    "-M6zG4Xm3zKpzHGAk1CW" : {
+      "email" : "younes@dd.dd",
+      "location" : {
+        "city" : "dasdasas",
+        "state" : "dasd",
+        "zip" : "22222"
+      },
+      "name" : "hassani"
+    }
+  },
+  "fruits" : {
+    "-M6yWonRU7KZkxm1YnEx" : {
+      "fruit" : "mango",
+      "total" : "17"
+    }
+  },
+  "participants" : {
+    "-M75W_rc2CuV4BXyETDU" : {
+      "Emailparticipant" : "gg@dd.dd",
+      "Nomparticipant" : "azizi",
+      "Prenomparticipant" : "hassan",
+      "datenaissance" : "1998-05-12",
+      "telparticipant" : "031829389"
+    },
+    "-M75ejhpSJKoSXbEsq_6" : {
+      "Emailparticipant" : "gg@dd.dd",
+      "Nomparticipant" : "younes",
+      "Prenomparticipant" : "el",
+      "datenaissance" : "1992-12-08",
+      "telparticipant" : "091298738"
+    },
+    "-M7KUJIIP5OEqLLYBs6F" : {
+      "Emailparticipant" : "gg@dd.dd",
+      "Nomparticipant" : "ssss",
+      "Prenomparticipant" : "wqwqqw",
+      "datenaissance" : "2002-05-15",
+      "telparticipant" : "083728947238947"
+    },
+    "-M7KWJafGwgqbm-iCuKU" : {
+      "Emailparticipant" : "hamid@gmail.com",
+      "Nomparticipant" : "hamid",
+      "Prenomparticipant" : "saadi",
+      "datenaissance" : "1990-09-20",
+      "telparticipant" : "098312832"
+    }
+  },
+  "students" : {
+    "-M7_KrJYBHwza7xJQFDS" : {
+      "email" : "necotis542@clsn.top",
+      "name" : "hassan",
+      "pass" : "wwww"
+    },
+    "-M7_LE9C5vvs63fsUBBr" : {
+      "email" : "asdasd@gg.dd",
+      "name" : "sakiri",
+      "pass" : "ttttttttt"
+    },
+    "-M7bgUZRx12F_xbRgEbi" : {
+      "email" : "alan@gmail.com",
+      "name" : "alan",
+      "pass" : "alan123"
+    }
+  },
+  "travaux" : {
+    "-M7KftCC2vAVf_IpytCU" : {
+      "Url" : "https://www.youtube.com/embed/8FqZZrbnwkM"
+    }
+  },
+  "users" : {
+    "0" : {
+      "age" : 24,
+      "email" : "ameraz@email.com",
+      "name" : "Alex Meraz"
+    },
+    "1" : {
+      "age" : 21,
+      "email" : "mrafi@email.com",
+      "name" : "Mohammed Rafi"
+    },
+    "2" : {
+      "age" : 31,
+      "email" : "rtamil@email.com",
+      "name" : "Raja Tamil"
+    },
+    "3" : {
+      "age" : 21,
+      "email" : "spichai@email.com",
+      "name" : "Sundar Pichai"
+    },
+    "-M6sy3M-mhmircdc_jxt" : {
+      "age" : 28,
+      "email" : "karimi@email.com",
+      "name" : "hatim karimi"
+    }
+  }
+}

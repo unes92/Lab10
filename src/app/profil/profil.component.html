@@ -1,0 +1,46 @@
+
+<div id="profilForm">
+<form  >
+    <mat-form-field appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input [(ngModel)]="myEmployee.nom" matInput name="nom"  placeholder="Votre Nom" >
+    </mat-form-field>
+<br>
+
+<mat-form-field appearance="fill">
+    <mat-label>Prenom</mat-label>
+    <input [(ngModel)]="myEmployee.prenom" matInput name="prenom"  placeholder="Votre Prenom" >
+</mat-form-field>
+<br>
+        <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input [(ngModel)]="myEmployee.email" matInput name="email"  placeholder="pat@example.com" >
+     <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+
+    </mat-form-field>
+    <br>
+   <!-- <mat-form-field appearance="fill">
+        <mat-label>Telephone</mat-label>
+        <input [(ngModel)]="myEmployee.telephone" matInput placeholder="Votre Telephone" >
+    </mat-form-field>-->
+    <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+212 &nbsp;</span>
+        <input [(ngModel)]="myEmployee.telephone" name="telephone" type="tel" matInput placeholder="555-555-1234">
+    </mat-form-field>
+    <br>
+    
+    <section>
+    
+        <div class="example-button-row">
+     
+          <button mat-raised-button  (click)="ajoutEmployee()" color="primary" type="submit" >Enregistrer</button>
+          <button mat-raised-button  type="reset">Annuler</button>
+      
+        </div>
+      </section>
+
+ 
+
+</form>
+</div>
