@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-import { ServiceEtudiantService } from '../../service-etudiant.service';
+import { ServiceEtudiantService } from '../../Services/service-etudiant.service';
 import {Etudiant } from '../../models/etudiant';
 import { ActivatedRoute } from '@angular/router';
-
+import {Router} from '@angular/router';
 /**
  * @author : younes
  * classe  EditComponent : qui modifier le profil
@@ -58,7 +58,7 @@ export class EditComponent implements OnInit {
    * @param {ServiceEtudiantService} addService
    * @memberof ProfilComponent
    */
-  constructor(private addService: ServiceEtudiantService,private route: ActivatedRoute) { 
+  constructor(private addService: ServiceEtudiantService,private route: ActivatedRoute,private laRoute:Router) { 
 
   }
 
@@ -140,12 +140,14 @@ emailFormControl = new FormControl('', [
      // this.user.age = 'Updated Age';
       this.addService.updateEtudiant(data).subscribe(data1 => {
         this.addService.findAll();
-
+        this.laRoute.navigate(['/Etudiants']);
         console.log("data1 ");
         console.log(data1);
 
       });
     });
+   
+   
   }
 
 

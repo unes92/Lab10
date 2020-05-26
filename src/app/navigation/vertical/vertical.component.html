@@ -4,13 +4,13 @@
   </button>
   <mat-menu   #menu="matMenu">
     <button  mat-menu-item>
-      <span ><a href="/Etudiants">Liste des etudiants</a></span>
+      <span ><a  [routerLink]="['/Etudiants']">Liste des etudiants</a></span>
     </button>
     <button  mat-menu-item>
       <span><a  [routerLink]="['/profil']">Mon profil</a></span>
     </button>
     <button  mat-menu-item>
-      <span><a href="/Quitter">Quitter</a></span>
+      <span><a  href="/Quitter">Quitter</a></span>
     </button>
   </mat-menu>
 

@@ -29,18 +29,92 @@
       "id": 5
     },
     {
-      "nom": "kamal",
+      "nom": "rachid",
       "prenom": "sakiri",
       "email": "kamal@gmail.com",
-      "telephone": "09882212",
+      "telephone": "0988221211",
       "id": 6
     },
     {
-      "nom": "mohcini",
-      "prenom": "said",
-      "email": "mohcini@gmail,com",
-      "telephone": "21232323",
-      "id": 8
+      "nom": "samiri",
+      "prenom": "noman",
+      "email": "noman@gmail.com",
+      "telephone": "2131231231231",
+      "id": 7
+    }
+  ],
+  "Participants": [
+    {
+      "id": 1,
+      "nom": "adnani",
+      "prenom": "mohamed",
+      "dateNaissance": "1992-12-01",
+      "age": 28,
+      "telephone": "9845781256",
+      "email": "emp@g.ff"
+    },
+    {
+      "nom": "kamal",
+      "prenom": "Varmas",
+      "dateNaissance": "1970-05-04T00:00:00.000Z",
+      "age": 50,
+      "email": "dasda@dd.dd",
+      "telephone": "3123313",
+      "id": 2
+    },
+    {
+      "nom": "dd",
+      "prenom": "Varma",
+      "dateNaissance": "1980-05-05T00:00:00.000Z",
+      "age": 40,
+      "email": "dasdada",
+      "telephone": "312312312",
+      "id": 3
+    },
+    {
+      "nom": "sadasdasdasd",
+      "prenom": "asdasdasd",
+      "dateNaissance": "1975-05-04T00:00:00.000Z",
+      "age": 45,
+      "email": "asdasdasdasd",
+      "telephone": "213123111",
+      "id": 2223
+    }
+  ],
+  "Travaux": [
+    {
+      "id": 1,
+      "titreTravail": "cours angular",
+      "descriptionTravail": "Angular tutorial for beginners: Learn Angular & TypeScript from scratch,This Angular tutorial teaches you the fundamentals of Angular and TypeScript.",
+      "lienvideo": "https://www.youtube.com/embed/k5E2AVpwsko"
+    },
+    {
+      "titreTravail": "Deploy app",
+      "descriptionTravail": "This is the easiest method to deploy your Angular app on the web using github. GitHub Pages lets you host static websites for free.",
+      "lienvideo": "https://www.youtube.com/embed/wElk1W1BJ2o",
+      "id": 2
+    }
+  ],
+  "Discussions": [
+    {
+      "id": 1,
+      "content": "cours angular",
+      "dateMsg": "Tue May 26 2020 00:49:36 GMT+0100 (UTC+01:00)"
+    },
+    {
+      "content": "bonjour",
+      "dateMsg": "Tue May 26 2020 23:47:39 GMT+0100 (UTC+01:00)",
+      "id": 2
+    },
+    {
+      "content": "test message",
+      "dateMsg": "Tue May 26 2020 23:47:47 GMT+0100 (UTC+01:00)",
+      "id": 3
+    },
+    {
+      "content": "Bien recu",
+      "dateMsg": "Tue May 26 2020 23:50:23 GMT+0100 (UTC+01:00)",
+      "id": 4
     }
   ]
 }
