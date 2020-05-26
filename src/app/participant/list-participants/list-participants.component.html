@@ -1,9 +1,15 @@
+<div class="example-button-row" style="text-align:right">
+  <a mat-mini-fab color="primary" [routerLink]="['/Participant/add']" >+</a>
+</div>
+
 <table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nom</th>
         <th scope="col">Prenom</th>
+        <th scope="col">Date de naissance</th>
+        <th scope="col">Age</th>
         <th scope="col">Email</th>
         <th scope="col">Telephone</th>
         <th scope="col"></th>
@@ -11,30 +17,29 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let etudiant of Etudiants">
-        <th scope="row">{{etudiant.id}}</th>
-        <td>{{etudiant.nom}}</td>
-        <td>{{etudiant.prenom}}</td>
-        <td>{{etudiant.email}}</td>
-        <td>{{etudiant.telephone}}</td>
-        <td><a [routerLink]="['/profil',etudiant.id]" (click)="open(content,etudiant.id)">   <i  class="far fa-trash-alt"></i></a></td>
-        <td><a [routerLink]="['/profil/edit',etudiant.id]">  <i class="far fa-edit"></i></a></td>
+      <tr *ngFor="let Participant of Participants">
+        <th scope="row">{{Participant.id}}</th>
+        <td>{{Participant.nom}}</td>
+        <td>{{Participant.prenom}}</td>
+        <td>{{Participant.dateNaissance |  date:"MM/dd/yyyy"  }}</td>
+        <td>{{Participant.age}}</td>
+        <td>{{Participant.email}}</td>
+        <td>{{Participant.telephone}}</td>
+        <td><a id="delete" [routerLink]="['/Participant/List',Participant.id]" (click)="open(content,Participant.id)">  <i class="far fa-trash-alt"></i></a></td>
+        <td><a [routerLink]="['/Participant/edit',Participant.id]">  <i class="far fa-edit"></i></a></td>
       </tr>
-    
-
-   
+     
     </tbody>
   </table>
-
   <ng-template #content let-modal>
     <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Suppression Des Etudiants</h4>
+      <h4 class="modal-title" id="modal-basic-title">Suppression Des participants</h4>
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     <div class="modal-body">
-        Voulez vous supprimer cet Etudiant?
+        Voulez vous supprimer ce participant?
       <!--<form>
         <div class="form-group">
           <label for="dateOfBirth">Date of birth</label>
@@ -52,3 +57,11 @@
       <button type="button" class="btn btn-outline-dark" (click)="modal.dismiss('Cross click')">No</button>
     </div>
   </ng-template>
+
+
+
+
+
+  
+  
+  

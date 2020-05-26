@@ -8,9 +8,19 @@
 
   #profilForm{
 
-    border: 1px solid black;
-    width: 50%;
+  
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 3%;
   }
+
+  .mat-form-field{
+   width: 400px;
+  }
+
+
+
+
+  /*
+    border: 1px solid black;
+    width: 50%;*/

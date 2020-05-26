@@ -13,8 +13,7 @@ import { ProfilComponent } from './profil/profil.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-//import { AjouterparticipantComponent } from './ajouterparticipant/ajouterparticipant.component';
-
+import { AjouterparticipantComponent } from './participant/ajouterparticipant/ajouterparticipant.component';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -30,6 +29,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { EditComponent } from './profil/edit/edit.component';
+import { ListParticipantsComponent } from './participant/list-participants/list-participants.component';
+import { EditParticipantComponent } from './participant/edit-participant/edit-participant.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddComponent } from './Travaux/add/add.component';
+import { ListComponent } from './Travaux/list/list.component';
+import {MatCardModule} from '@angular/material/card';
+import { AjoutmsgComponent } from './discussion/ajoutmsg/ajoutmsg.component';
+import { FluxComponent } from './discussion/flux/flux.component';
+import { DiscussionComponent } from './discussion/discussion.component';
+
 
 
 
@@ -43,7 +52,16 @@ import { EditComponent } from './profil/edit/edit.component';
     ProfilComponent,
     ListEtudiantComponent,
     EditComponent,
-    //AjouterparticipantComponent,
+    AjouterparticipantComponent,
+    ListParticipantsComponent,
+    EditParticipantComponent,
+    AddComponent,
+    ListComponent,
+    AjoutmsgComponent,
+    FluxComponent,
+    DiscussionComponent
+
+  
   
     
   ],
@@ -73,7 +91,9 @@ import { EditComponent } from './profil/edit/edit.component';
     MatNativeDateModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule,
+    MatCardModule
   ],
   
   providers: [],

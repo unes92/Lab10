@@ -1,0 +1,27 @@
+#VIDEOS
+{
+    text-align: center;
+}
+
+
+.travail
+{
+
+    border: 1px solid black;
+}
+
+.mat-card
+{
+    text-align: center;
+  
+}
+
+.mat-card-header{
+
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.mat-card-title
+{
+margin-left: 420px;}

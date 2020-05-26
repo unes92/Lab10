@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-import { ServiceEtudiantService } from '../service-etudiant.service';
+import { ServiceEtudiantService } from '../Services/service-etudiant.service';
 import {Etudiant } from '../models/etudiant';
+import {Router} from '@angular/router';
 
 /**
  * @author : younes
- * classe  ProfilComponent : qui affiche ajout les etudiants
+ * classe  ProfilComponent : qui ajout les etudiants
  */
 
 
@@ -44,7 +45,7 @@ export class ProfilComponent implements OnInit {
    * @param {ServiceEtudiantService} addService
    * @memberof ProfilComponent
    */
-  constructor(private addService: ServiceEtudiantService) { 
+  constructor(private addService: ServiceEtudiantService,private laRoute:Router) { 
   
 //this.Etudiants=[];
    
@@ -68,13 +69,16 @@ emailFormControl = new FormControl('', [
    * @memberof ProfilComponent
    */
   ajoutetudiant(){
-    this.addService.addobject<Etudiant>(this.myEtudiant).subscribe(
-      etudiant => this.Etudiants = [etudiant,...this.Etudiants]);
+    this.addService.addobject<Etudiant>(this.myEtudiant,"Etudiants").subscribe(
+      (etudiant) => { this.Etudiants = [etudiant,...this.Etudiants];
+        this.laRoute.navigate(['/Etudiants']);
+   // console.log(" etudiant 1"+this.Etudiants[0].nom);
+  //  console.log(" etudiant 2"+this.Etudiants[2].nom);
+  //  console.log("nom etudiant"+this.myEtudiant.nom);
+
     
-    console.log(" etudiant 1"+this.Etudiants[0].nom);
-    console.log(" etudiant 2"+this.Etudiants[2].nom);
-    console.log("nom etudiant"+this.myEtudiant.nom);
-  };
+    }
+    )  };
 
 
   /**
@@ -135,7 +139,7 @@ emailFormControl = new FormControl('', [
       console.log("data"+data);
       console.log("nom employe"+this.myEtudiant.nom);
     //  this.services.createEmployee(this.emp);
-    this.addService.msg(data);
+
         }
 
   /*
