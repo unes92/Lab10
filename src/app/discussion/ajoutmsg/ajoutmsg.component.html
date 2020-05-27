@@ -1,0 +1,7 @@
+<form class="example-form" >
+    <mat-form-field class="example-full-width">
+      <mat-label>Message</mat-label>
+      <input [(ngModel)]="myDiscussion.content" name= "content" matInput placeholder="Entrer votre message" >
+    </mat-form-field>
+        <button (click)="ajoutMessage()" mat-raised-button color="primary">>></button>
+  </form>

@@ -1,0 +1,15 @@
+#container{
+    border: 1px solid black;
+    width:70%; 
+    height: 400px;
+    overflow: scroll}
+
+
+    #content{
+
+
+border: 1px solid black;
+padding: 4%; 
+text-align: center; width: 40%;border-radius:100px;
+margin: 2%;
+    }
