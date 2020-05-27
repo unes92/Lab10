@@ -1,0 +1,43 @@
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+#newpost
+{
+  margin-top:80px;
+}
+
+
+
+.mat-form-field,section{
+
+
+  
+   text-align: center;
+  margin: 5px 30%;
+
+
+}
+
+.mat-form-field{
+ width: 400px;
+}
+
+
+
+
+/*
+  border: 1px solid black;
+  width: 50%;*/
+
+
+
+
+  #newposts{
+
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3%;
+  }

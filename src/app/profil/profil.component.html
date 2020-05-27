@@ -1,0 +1,43 @@
+
+<div id="profilForm">
+<form  >
+    <mat-form-field appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input [(ngModel)]="myEtudiant.nom" matInput name="nom"  placeholder="Votre Nom">
+    </mat-form-field>
+<br>
+
+<mat-form-field appearance="fill">
+    <mat-label>Prenom</mat-label>
+    <input [(ngModel)]="myEtudiant.prenom" matInput name="prenom"  placeholder="Votre Prenom" >
+</mat-form-field>
+<br>
+        <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input [(ngModel)]="myEtudiant.email" matInput name="email"  placeholder="pat@example.com" >
+     <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+
+    </mat-form-field>
+    <br>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+212 &nbsp;</span>
+        <input [(ngModel)]="myEtudiant.telephone" name="telephone" type="tel" matInput placeholder="611223344">
+    </mat-form-field>
+    <br>
+    
+    <section>
+    
+        <div class="example-button-row">
+     
+          <button mat-raised-button  (click)="ajoutetudiant()" color="primary" type="submit" >Enregistrer</button>
+          <button mat-raised-button  type="reset">Annuler</button>
+      
+        </div>
+      </section>
+
+ 
+
+</form>
+</div>

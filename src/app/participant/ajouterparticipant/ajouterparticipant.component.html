@@ -1,0 +1,43 @@
+<form class="example-form" >
+    <mat-form-field class="example-full-width">
+      <mat-label>Nom</mat-label>
+      <input [(ngModel)]="myParticipant.nom" name= "nom" matInput placeholder="Entrer Nom" >
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Prenom</mat-label>
+      <input [(ngModel)]="myParticipant.prenom" name="prenom" matInput placeholder="Enter prenom">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Date de Naissance</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="myParticipant.dateNaissance" name="dateNaissance">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="myParticipant.email" name="email" matInput  placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+212 &nbsp;</span>
+        <input [(ngModel)]="myParticipant.telephone" name="telephone" type="tel" matInput placeholder="555-555-1234">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    
+    <div class="example-button-row">
+        <button (click)="ajoutParticipant()" mat-raised-button color="primary" type="submit">Enregistrer</button>
+        <button (click)="reset()" mat-raised-button>Annuler</button>
+    </div>
+
+  </form>

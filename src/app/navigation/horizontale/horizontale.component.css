@@ -1,0 +1,17 @@
+.menuh
+{
+    border: 1px solid white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 1% 5%;
+    background-color: #3F51B5;
+    
+   
+}

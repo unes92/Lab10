@@ -1,0 +1,9 @@
+<div id="container" >
+
+    
+    <div id="content" *ngFor="let Discussion of discussions">
+   <p><b>{{Discussion.content}}</b></p>
+   <small>{{Discussion.dateMsg |  date:"MM/dd/yyyy hh:mm:ss" }}</small>
+    </div>
+
+</div>
